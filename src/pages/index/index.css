@@ -1,0 +1,373 @@
+.clearfloat:after{
+    clear:both;
+    content:'';
+    display:block;
+    width:0;
+    height:0;
+    visibility:hidden;
+
+}
+/*头部*/
+.m-topbar{
+    position:relative;
+    width:100%;
+    height:0;
+    padding-bottom:84px;
+    transition:padding-bottom .3s;
+}
+.topfix{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    box-sizing:border-box;
+    background-color:#d43c33;
+    height:84px;
+    padding:0 10px;
+    z-index:100;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.topfl{
+    position:relative;
+    width:142px;
+    height:25px;
+    font-weight: 200;
+    line-height: 25px;
+}
+.toptit{
+    height: 25px;
+    line-height: 25px;
+    font-size: 25px;
+    color:#ffffff;
+
+}
+.topfr{
+    border: 1px;
+}
+
+.topbton{
+    position: relative;
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    font-size: 16px;
+    width: 100px;
+    text-align: center;
+    color: #d43c33;
+    background-color: #ffffff;
+    border-radius: 37.5%/100%;
+}
+.m-tabarea{
+    padding-top: 40px;
+    margin: 0 auto;
+
+}
+.u-tab{
+    position: fixed;
+    top: 84px;
+    left:0;
+    z-index:100;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 40px;
+    background-color: #ffffff;
+    border-bottom:1px solid #e6e6e6;
+
+}
+.m-tabarea .u-tab .tabtit{
+    flex: 1;
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+.tabtxt{
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+    height: 100%;
+    padding: 0 5px;
+    box-sizing: border-box;
+    font-size: 15px;
+    line-height: 40px;
+}
+.tabtxt.active{
+    color: #d43c33;
+    border-bottom: 2px solid #d43c33;
+}
+.m-tabct,.tabctitem{
+    width: 100%;
+    height:100%;
+    background-color:rgba(252,252, 253, 1);
+}
+.m-homeremd{
+    padding-top: 20px;
+}
+.remd-tl{
+    position: relative;
+    padding-left: 9px;
+    margin-bottom: 14px;
+    font-size: 17px;
+    height: 20px;
+    line-height: 20px;
+}
+.remd-tl:after{
+    content:'';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -9px;
+    width: 2px;
+    height: 16px;
+    background-color: #d33a31;
+}
+
+.remd-songs{
+    padding-bottom: 24px;
+    position: relative;
+
+}
+
+.remd-li{
+    padding-left: 1px;
+    padding-right: 1px;
+    display: block;
+    margin-bottom: 16px;
+    float:left;
+    width: 33.3%;
+    box-sizing: border-box;
+    color: #333;
+}
+.remd-li:first-child{
+    padding-left: 1px;
+    padding-right:2px;
+}
+.remd-img{
+    position: relative;
+    padding-bottom: 100%;
+
+}
+.remd-img .img{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.remd-text{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    padding: 6px 2px 0 6px;
+    line-height: 18px;
+    height: 36px;
+    font-size: 13px;
+}
+.remd-news{
+    position: relative;
+    min-height: 20px;
+
+}
+.remd-sglstitem{
+    padding-left: 10px;
+    display: flex;
+}
+.sgfr{
+    position: relative;
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid #efeff0;
+}
+.remd-fl{
+    padding: 6px 0;
+    width: 100%;
+
+}
+.remd-singcom{
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: normal;
+}
+.remd-singtit{
+    font-size: 17px;
+    
+}
+.remd-singinfo{
+    font-size: 12px;
+    color: #888888;
+}
+.remd-fr{
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.remd-singicon{
+    display: inline-block;
+  
+}
+.remd-chpy{
+    display: inline-block;
+    width: 12px;
+    height: 8px;
+    margin-right: 4px;
+}
+.remd-chply{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    
+   
+}
+.remd-hmsprt1{
+    background: url(//s3.music.126.net/mobile-new/img/index_icon_2x.png?5207a28…=) no-repeat;
+    background-size: 166px 97px;
+   
+}
+.remd-hmsprt{
+    background: url(//s3.music.126.net/mobile-new/img/index_icon_2x.png?5207a28…=) no-repeat;
+    background-size: 166px 97px;
+    background-position: -24px 0px;
+}
+
+/*热歌榜*/
+.hottop{
+  position: relative;
+  padding-top: 38.9%;
+  overflow: hidden;
+  background: url(https://s3.music.126.net/mobile-new/img/hot_music_bg_2x.jpg?f01a252389c26bcf016816242eaa6aee=) no-repeat;  
+  background-size: contain;
+}
+.hottop:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: rgba(0,0,0,.2);
+}
+.hotopct{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    left:0;
+    right: 0;
+    top:0;
+    bottom:0;
+    z-index:2;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.hmspicon{
+    background: url(https://s3.music.126.net/mobile-new/img/index_icon_2x.png?5207a28c3767992ca4bb6d4887c74880=) no-repeat;
+    background-size: 166px 97px;
+}
+.hmsprt{
+    width:142px;
+    height: 67px;
+    background-position: -24px -30px;
+}
+.hottime{
+    margin-top: 10px;
+    color: hsla(0, 0%, 100%, .8);
+    font-size: 12px;
+    transform: scale(.91);
+    transform-origin: left top;
+}
+
+/*搜索*/
+.m-input{
+    padding: 15px 10px;
+    position: relative;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+.inputcover{
+    position: relative;
+    width: 100%;
+    height:30px;
+    padding: 0 30px;
+    box-sizing: border-box;
+    background-color: #ebecec;
+    border-radius: 30px;
+
+}
+.inputcover:after{
+    width:200%;
+    height: 200%;
+    border-color: rgba(0, 0, 0, .1);
+    transform: scale(.5);
+    border-bottom-width: 1px;
+}
+.m-inputsrch{
+    position: absolute;
+    left: 0;
+    top: 9px;
+    margin: 0 8px;
+    vertical-align: middle;
+}
+.m-input-icon{
+    width: 13px;
+    height: 13px;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNiAyNiI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBmaWxsPSIjYzljOWNhIiBkPSJNMjUuMTgxIDIzLjUzNWwtMS40MTQgMS40MTQtNy4zMTUtNy4zMTRBOS45NjYgOS45NjYgMCAwIDEgMTAgMjBDNC40NzcgMjAgMCAxNS41MjMgMCAxMFM0LjQ3NyAwIDEwIDBzMTAgNC40NzcgMTAgMTBjMCAyLjM0Mi0uODExIDQuNDktMi4xNiA2LjE5NWw3LjM0MSA3LjM0ek0xMCAyYTggOCAwIDEgMCAwIDE2IDggOCAwIDAgMCAwLTE2eiIvPjwvc3ZnPg==);
+    display: inline-block;
+    background-position: 0 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.search{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 14px;
+    color:#333;
+}
+.holder{
+    position: absolute;
+    left:30px;
+    top: 5px;
+    font-size: 14px;
+    color:#9c9c9c;
+    background-color:rgba(0, 0, 0, 0);
+    pointer-events: none;
+}
+.m-hotlist{
+    padding: 15px 10px 0;
+}
+.title{
+    font-size: 12px;
+    line-height: 12px;
+    color: #666666;
+    font-weight: 400;
+}
+.list{
+    margin: 10px 0 7px;
+}
+.item{
+    display: inline-block;
+    height: 32px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    padding: 0 14px;
+    font-size: 14px;
+    line-height: 32px;
+    columns: #333333;
+    position: relative;
+    border-radius: 32px;
+    border: 1px solid #d3d4da;
+  
+}
